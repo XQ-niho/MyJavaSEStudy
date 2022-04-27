@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+     <student id="1">
+          <name>AA</name>
+          <birthday>2022-04-11</birthday>
+          <gender>MALE</gender>
+     </student>
+     <student id="2">
+          <name>BB</name>
+          <birthday>2022-04-11</birthday>
+          <gender>FEMALE</gender>
+          <address>
+               <province>A</province>
+               <city>B</city>
+               <area>C</area>
+          </address>
+     </student>
+     <student id="3">
+          <name>CC</name>
+          <birthday>2022-04-11</birthday>
+          <gender>MALE</gender>
+          <address>
+               <province>A</province>
+               <city>B</city>
+               <area>C</area>
+          </address>
+     </student>
+</students>

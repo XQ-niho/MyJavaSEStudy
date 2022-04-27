@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<students>
+    <student id="1">
+        <name>张三</name>
+        <birthday>2000-12-12</birthday>
+        <gender>男</gender>
+        <address>
+            <province>江苏省</province>
+            <city>苏州市</city>
+            <area>工业园区</area>
+        </address>
+    </student>
+    <student id="2">
+        <name>李四</name>
+        <birthday>1999-03-08</birthday>
+        <gender>女</gender>
+    </student>
+    <student id="3">
+        <name>王五</name>
+        <birthday>2001-04-15</birthday>
+        <gender>男</gender>
+        <address>
+            <province>江苏省</province>
+            <city>苏州市</city>
+            <area>姑苏区</area>
+        </address>
+    </student>
+</students>

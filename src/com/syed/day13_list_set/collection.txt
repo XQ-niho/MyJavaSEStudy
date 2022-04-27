@@ -1,0 +1,38 @@
+1、集合不能直接存储基本数据类型，另外集合也不能直接存储Java对象，
+集合当中存储的都是Java对象内存地址
+2、在Java中每一个不同的集合，底层会对应不同的数据结构，往不同的集合中存储元素，等于将
+数据放到了不同的数据结构当中
+3、所有集合类和集合接口都在java.util.*包下
+4、在Java中集合分为两大类:
+        一类是单个方式存储元素
+            单个方式存储元素，这一类集合中的超级父类接口：java.util.Collection;
+        一类是以键值对的方式存储元素
+            以键值对的方式存储元素，这一类集合中的超级父接口：java.util.Map
+
+
+                                        Iterable(可迭代的，可遍历的)
+      (hasNext()、next()、remove())         |
+      (迭代集合)Iterable集合迭代器对象-----Collection
+                                        |      |
+                    (无序不可重复，没有下标)Set   List(有序（存进去和取出来是一样的顺序）可重复,存储元素有下标)
+                    |                   |      |(非线程安全)             |(非线程安全)             |(线程安全，效率较低)
+(可自动排序)SortedSet(接口)          HashSet      ArrayList(数组结构)      LinkedList(双向链表结构)   Vector(数组结构)
+                    |      (在new时,底层实际上new了一                                              |
+              TreeSet      个HashMap集合,是一个哈希表结构)                                          Stack
+ (在new时,底层实际上new了一个               |
+ TreeMap,是一个二叉树结构)           LinkedHashSet
+                              有序（存进去和取出来是一样的顺序）
+
+
+
+                               Map(和Collection没关系,以Key-Value存储对象内存地址所有Map集合的Key：无序不可重复)
+                                |(非线程安全)       |(线程安全)                |
+                          HashMap(哈希表结构)       Hashtable(哈希表结构)      SortedMap(接口)(Key自动排序)
+                                                  |(线程安全)                |
+                                                  Properties(哈希表结构)     TreeMap(二叉树结构)
+                                              (Key和Value只支持String类
+                                               型，不支持其他类型)
+
+
+5、Map集合的Key，就是一个Set集合，在Set集合中放数据，实际上
+放到了Map集合的Key部分

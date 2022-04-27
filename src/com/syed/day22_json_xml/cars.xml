@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+    <car id="1">
+        <brand>保时捷</brand>
+        <type>911</type>
+        <price>1500000</price>
+    </car>
+    <car id="2">
+        <brand>奥迪</brand>
+        <type>R8</type>
+        <price>2300000</price>
+    </car>
+    <car id="3">
+        <brand>奔驰</brand>
+        <type>C63</type>
+        <price>800000</price>
+    </car>
+</cars>

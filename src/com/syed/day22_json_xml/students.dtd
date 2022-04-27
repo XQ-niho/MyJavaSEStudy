@@ -1,0 +1,11 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, birthday, gender, address?)>
+<!ATTLIST student id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT birthday (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+
+<!ELEMENT address (province, city, area)>
+<!ELEMENT province (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT area (#PCDATA)>
