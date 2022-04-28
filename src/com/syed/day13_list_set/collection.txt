@@ -28,9 +28,9 @@
                                Map(和Collection没关系,以Key-Value存储对象内存地址所有Map集合的Key：无序不可重复)
                                 |(非线程安全)       |(线程安全)                |
                           HashMap(哈希表结构)       Hashtable(哈希表结构)      SortedMap(接口)(Key自动排序)
-                                                  |(线程安全)                |
-                                                  Properties(哈希表结构)     TreeMap(二叉树结构)
-                                              (Key和Value只支持String类
+                                |                 |(线程安全)                |
+                          LinkedHashMap           Properties(哈希表结构)     TreeMap(二叉树结构)
+                    有序（存进去和取出来是一样的顺序） (Key和Value只支持String类
                                                型，不支持其他类型)
 
 
