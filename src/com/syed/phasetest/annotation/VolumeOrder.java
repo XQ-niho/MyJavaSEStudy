@@ -1,4 +1,6 @@
-package com.syed.phasetest;
+package com.syed.phasetest.annotation;
+
+import com.syed.phasetest.constans.Order;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,13 +9,12 @@ import java.lang.annotation.Target;
 
 /**
  * @program: MyJavaSEStudy
- * @description: 解析策略注解
+ * @description:
  * @author: USER
- * @create: 2022-04-20
+ * @create: 2022-04-29
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TypeOfHandleAnnotation {
-    AnalysisStrategy strategy() default AnalysisStrategy.ANALYSIS_ALL;
-    int dealNum() default -1;
+public @interface VolumeOrder {
+    Order orderType() default Order.ASC;
 }
